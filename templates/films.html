@@ -1,0 +1,17 @@
+<html>
+    <head>
+        Films
+    </head>
+    <body>
+        <main>
+            <h1>
+                Film List
+            </h1>
+            <ul>
+                {% for film in films %}
+                <li>{{ film.title }} - {{ film.genre }} - {{ film.release_year }} - {{ film.rating }}</li>
+                {% endfor %}
+            </ul>
+        </main>
+    </body>
+</html>
