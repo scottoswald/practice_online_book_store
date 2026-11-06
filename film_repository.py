@@ -7,7 +7,7 @@ class FilmRepository:
         self._connection = connection
 
     # Retrieve all books
-    # id is now the third arugemnt (see book.py to get reason why)
+    # id is now the third arguemnt (see book.py to get reason why)
     def all(self):
         rows = self._connection.execute('SELECT * FROM films')
         films = []
